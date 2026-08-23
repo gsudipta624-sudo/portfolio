@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUDIPTA GHORAI - Computer Science & Engineering Student Portfolio</title>
+  <meta name="description" content="Official student portfolio and interactive CV of Sudipta Ghorai, Computer Science & Engineering student at Hooghly Engineering & Technology College (MAKAUT).">
+  <meta name="keywords" content="Sudipta Ghorai, Computer Science Student, Portfolio, Resume, HETC, MAKAUT, Python, C, Data Structure, SIH 2026">
+  <meta name="author" content="Sudipta Ghorai">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+  <!-- Google Fonts: Outfit, Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Floating Background Glow Orbs -->
+  <div class="ambient-glow-wrapper no-print" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="mesh-grid-pattern"></div>
+  </div>
+
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-bar no-print" id="scrollProgressBar"></div>
+
+  <!-- Top Navigation & Action Header -->
+  <header class="top-nav-container no-print" id="topNav">
+    <div class="nav-announcement-bar">
+      <div class="announcement-inner">
+        <div class="status-left">
+          <span class="status-badge-live">
+            <span class="live-dot"></span>
+            <span>Open to Academic & Internship Roles</span>
+          </span>
+          <span class="divider-dot">|</span>
+          <span class="location-tag">
+            <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Kolkata, West Bengal, India
+          </span>
+        </div>
+
+        <div class="actions-right">
+          <!-- Search trigger -->
+          <button class="nav-btn-mini animated-hover-btn" id="searchTriggerBtn" title="Search Portfolio (Ctrl+K)">
+            <svg class="icon-svg-sm text-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <span class="font-bold">Search</span>
+            <kbd class="kbd-badge">⌘K</kbd>
+          </button>
+
+          <!-- Copy Email -->
+          <button class="nav-btn-mini animated-hover-btn" id="quickCopyEmailBtn" title="Copy Email Address">
+            <svg class="icon-svg-sm text-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="btn-text-email">gsudipta624@gmail.com</span>
+          </button>
+
+          <!-- Copy Phone -->
+          <button class="nav-btn-mini animated-hover-btn" id="quickCopyPhoneBtn" title="Copy Phone Number">
+            <svg class="icon-svg-sm text-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>+91 7501654363</span>
+          </button>
+
+          <!-- Print / PDF -->
+          <button class="btn-print-action animated-hover-btn" id="printCvBtn" title="Print or Save Resume as PDF">
+            <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            <span>Print / PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="nav-inner">
+      <div class="nav-brand-group">
+        <a href="#hero" class="nav-brand">
+          <div class="brand-badge brand-badge-animated">SG</div>
+          <div class="brand-text">
+            <span class="brand-name">Sudipta Ghorai</span>
+            <span class="brand-tag">CSE '28</span>
+          </div>
+        </a>
+      </div>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#section-profile" class="nav-link">Profile</a>
+        <a href="#section-education" class="nav-link">Education</a>
+        <a href="#section-skills" class="nav-link">Skills</a>
+        <a href="#section-projects" class="nav-link">Projects</a>
+        <a href="#section-certifications" class="nav-link">Certifications</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Open Spotlight Search -->
+        <button class="btn btn-outline animated-spotlight-btn" id="searchSpotlightTrigger" title="Search (Ctrl+K)">
+          <svg class="icon-svg-sm text-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span class="search-placeholder">Search Portfolio...</span>
+          <kbd class="search-kbd">⌘K</kbd>
+        </button>
+
+        <!-- Contact Modal Trigger -->
+        <button class="btn btn-primary btn-pulse-glow" id="openContactModalBtn">
+          <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span>Contact Me</span>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main CV Page Wrapper -->
+  <main class="cv-page-wrapper">
+
+    <!-- Top Resume Header Area (Unified One Color SUDIPTA GHORAI in dark navy) -->
+    <section class="cv-header-banner tilt-reactive-card" id="hero">
+      <div class="card-glow-overlay"></div>
+      <div class="cv-header-content">
+        <div class="header-titles">
+          <h1 class="applicant-name" id="applicantName">
+            SUDIPTA GHORAI
+          </h1>
+          <div class="applicant-subtitle-container">
+            <span class="subtitle-badge animated-badge-shimmer">
+              <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <span id="dynamicTypewriter">COMPUTER SCIENCE & ENGINEERING STUDENT</span>
+            </span>
+            <span class="sub-divider-dot"></span>
+            <span class="college-subtext">
+              <svg class="icon-inline text-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M6 11v6M10 11v6M14 11v6M18 11v6M12 3l9 4H3l9-4z"/></svg>
+              Hooghly Engineering & Technology College (MAKAUT)
+            </span>
+          </div>
+        </div>
+
+        <div class="header-meta-pills no-print">
+          <span class="meta-pill animated-pill"><span class="pulse-dot"></span> B.Tech CSE (2024–2028)</span>
+          <span class="meta-pill animated-pill">📍 Kolkata, West Bengal</span>
+          <span class="meta-pill animated-pill">🚀 Open to Internships & Projects</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Two-Column Resume Container -->
+    <div class="resume-two-column-card tilt-reactive-card" id="mainResumeContainer">
+      <div class="card-glow-overlay"></div>
+
+      <!-- ================= LEFT SIDEBAR (Dark Navy-Blue ~35%) ================= -->
+      <aside class="resume-sidebar" id="sidebar">
+        
+        <!-- Profile Picture Box (Clickable Lightbox with Orbital Ring) -->
+        <div class="profile-photo-container">
+          <div class="orbital-glow-ring"></div>
+          <div class="photo-frame" id="avatarFrame" title="Click to view full photo">
+            <img src="assets/profile.jpg" alt="Sudipta Ghorai - Computer Science & Engineering Student" class="profile-avatar" id="profileImage">
+            <div class="avatar-badge-status" title="Available for Internship & Technical Projects">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+            </div>
+            <div class="photo-zoom-overlay">
+              <svg class="icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+          </div>
+          <div class="sidebar-name-tag">
+            <h2 class="sidebar-name">SUDIPTA GHORAI</h2>
+            <p class="sidebar-degree-badge">B.Tech in Computer Science & Engg.</p>
+            <p class="sidebar-subtext">Hooghly Engineering & Technology College</p>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="sidebar-divider"></div>
+
+        <!-- 1. PERSONAL INFORMATION -->
+        <div class="sidebar-section searchable-block" id="section-personal">
+          <div class="sidebar-section-header header-shimmer">
+            <span class="section-header-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </span>
+            <h3 class="section-title-sidebar">PERSONAL INFORMATION</h3>
+          </div>
+
+          <ul class="info-list">
+            <!-- Full Name -->
+            <li class="info-item tilt-item">
+              <div class="info-icon-col">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div class="info-content-col">
+                <span class="info-label">Full Name</span>
+                <span class="info-value">Sudipta Ghorai</span>
+              </div>
+            </li>
+
+            <!-- Date of Birth -->
+            <li class="info-item tilt-item">
+              <div class="info-icon-col">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+              </div>
+              <div class="info-content-col">
+                <span class="info-label">Date of Birth</span>
+                <span class="info-value">01 NOV 2006</span>
+              </div>
+            </li>
+
+            <!-- Location -->
+            <li class="info-item tilt-item">
+              <div class="info-icon-col">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+              </div>
+              <div class="info-content-col">
+                <span class="info-label">Location</span>
+                <span class="info-value">Kolkata, West Bengal, India</span>
+              </div>
+            </li>
+
+            <!-- Phone -->
+            <li class="info-item interactive-info tilt-item" id="phoneCopyItem" title="Click to copy phone number">
+              <div class="info-icon-col">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </div>
+              <div class="info-content-col">
+                <span class="info-label">Phone</span>
+                <a href="tel:+917501654363" class="info-value info-link">+91 7501654363</a>
+              </div>
+              <button class="copy-mini-btn" aria-label="Copy phone number">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </li>
+
+            <!-- Email -->
+            <li class="info-item interactive-info tilt-item" id="emailCopyItem" title="Click to copy email address">
+              <div class="info-icon-col">
+                <svg class="info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-content-col">
+                <span class="info-label">Email</span>
+                <a href="mailto:gsudipta624@gmail.com" class="info-value info-link">gsudipta624@gmail.com</a>
+              </div>
+              <button class="copy-mini-btn" aria-label="Copy email address">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Divider -->
+        <div class="sidebar-divider"></div>
+
+        <!-- 2. SKILLS -->
+        <div class="sidebar-section searchable-block" id="section-skills">
+          <div class="sidebar-section-header header-shimmer">
+            <div class="header-left-wrap">
+              <span class="section-header-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </span>
+              <h3 class="section-title-sidebar">SKILLS</h3>
+            </div>
+            <span class="skills-count-badge">⚡ 7 Core</span>
+          </div>
+
+          <!-- Category Filter Pills -->
+          <div class="skill-category-filters no-print">
+            <button class="skill-filter-btn active animated-filter" data-filter="All">All</button>
+            <button class="skill-filter-btn animated-filter" data-filter="Programming">Programming</button>
+            <button class="skill-filter-btn animated-filter" data-filter="Core CS">Core CS</button>
+            <button class="skill-filter-btn animated-filter" data-filter="Web & Tools">Web</button>
+            <button class="skill-filter-btn animated-filter" data-filter="Soft Skills">Soft</button>
+          </div>
+
+          <div class="skills-grid" id="skillsContainer">
+            <!-- Python -->
+            <div class="skill-chip tilt-item" data-category="Programming" data-skill="Python" data-target-pct="85">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">🐍</span> Python</span>
+                <span class="skill-level-text skill-counter" data-count="85">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="85%"></div>
+              </div>
+              <p class="skill-desc-sub">Object-oriented programming, data structures, scripting, algorithm design</p>
+            </div>
+
+            <!-- C -->
+            <div class="skill-chip tilt-item" data-category="Programming" data-skill="C" data-target-pct="88">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">⚙️</span> C Language</span>
+                <span class="skill-level-text skill-counter" data-count="88">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="88%"></div>
+              </div>
+              <p class="skill-desc-sub">Memory management, pointers, low-level data structures, system programming</p>
+            </div>
+
+            <!-- Data Structure -->
+            <div class="skill-chip tilt-item" data-category="Core CS" data-skill="Data Structure" data-target-pct="82">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">🧩</span> Data Structure</span>
+                <span class="skill-level-text skill-counter" data-count="82">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="82%"></div>
+              </div>
+              <p class="skill-desc-sub">Arrays, Stacks, Queues, Linked Lists, Trees, Graphs, Sorting & Searching algorithms</p>
+            </div>
+
+            <!-- Data Analysis -->
+            <div class="skill-chip tilt-item" data-category="Core CS" data-skill="Data Analysis" data-target-pct="75">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">📊</span> Data Analysis</span>
+                <span class="skill-level-text skill-counter" data-count="75">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="75%"></div>
+              </div>
+              <p class="skill-desc-sub">Data manipulation, statistical analysis, evaluation and pattern extraction</p>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-chip tilt-item" data-category="Web & Tools" data-skill="HTML" data-target-pct="90">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">🌐</span> HTML</span>
+                <span class="skill-level-text skill-counter" data-count="90">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="90%"></div>
+              </div>
+              <p class="skill-desc-sub">Semantic markup, accessibility, modern HTML5 web structures</p>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-chip tilt-item" data-category="Web & Tools" data-skill="CSS" data-target-pct="85">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">🎨</span> CSS</span>
+                <span class="skill-level-text skill-counter" data-count="85">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="85%"></div>
+              </div>
+              <p class="skill-desc-sub">Responsive styling, Flexbox, CSS Grid, media queries, modern UI aesthetics</p>
+            </div>
+
+            <!-- Communication -->
+            <div class="skill-chip tilt-item" data-category="Soft Skills" data-skill="Communication" data-target-pct="88">
+              <div class="skill-name-row">
+                <span class="skill-name"><span class="skill-badge-icon">💬</span> Communication</span>
+                <span class="skill-level-text skill-counter" data-count="88">0%</span>
+              </div>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill animated-shimmer-bar" style="width: 0%;" data-pct="88%"></div>
+              </div>
+              <p class="skill-desc-sub">Technical presentation, team collaboration, clear written and verbal correspondence</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="sidebar-divider"></div>
+
+        <!-- 3. LANGUAGES -->
+        <div class="sidebar-section searchable-block" id="section-languages">
+          <div class="sidebar-section-header header-shimmer">
+            <span class="section-header-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+              </svg>
+            </span>
+            <h3 class="section-title-sidebar">LANGUAGES</h3>
+          </div>
+
+          <div class="languages-list">
+            <!-- English -->
+            <div class="language-row tilt-item">
+              <div class="lang-info">
+                <span class="lang-dot-bullet pulse-bullet"></span>
+                <span class="lang-name">English</span>
+              </div>
+              <span class="lang-proficiency-pill">Professional Working (85%)</span>
+            </div>
+
+            <!-- Bengali -->
+            <div class="language-row tilt-item">
+              <div class="lang-info">
+                <span class="lang-dot-bullet pulse-bullet"></span>
+                <span class="lang-name">Bengali</span>
+              </div>
+              <span class="lang-proficiency-pill native">Native (100%)</span>
+            </div>
+
+            <!-- Hindi -->
+            <div class="language-row tilt-item">
+              <div class="lang-info">
+                <span class="lang-dot-bullet pulse-bullet"></span>
+                <span class="lang-name">Hindi</span>
+              </div>
+              <span class="lang-proficiency-pill">Fluent (90%)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="sidebar-divider"></div>
+
+        <!-- 4. INTERESTS -->
+        <div class="sidebar-section searchable-block" id="section-interests">
+          <div class="sidebar-section-header header-shimmer">
+            <span class="section-header-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+              </svg>
+            </span>
+            <h3 class="section-title-sidebar">INTERESTS</h3>
+          </div>
+
+          <div class="interests-tags">
+            <div class="interest-pill tilt-item">
+              <span class="interest-icon animated-float-icon">🎨</span>
+              <div class="interest-content">
+                <span class="interest-title">Drawing</span>
+                <span class="interest-desc">Sketching, artistic compositions, visual geometry and creative expression</span>
+              </div>
+            </div>
+            <div class="interest-pill tilt-item">
+              <span class="interest-icon animated-float-icon">🧠</span>
+              <div class="interest-content">
+                <span class="interest-title">Quiz in General knowledge</span>
+                <span class="interest-desc">Active participant in tech & GK quizzes, science trivias, and global developments</span>
+              </div>
+            </div>
+            <div class="interest-pill tilt-item">
+              <span class="interest-icon animated-float-icon">🏏</span>
+              <div class="interest-content">
+                <span class="interest-title">Playing Cricket</span>
+                <span class="interest-desc">Outdoor athletics, team leadership, strategic thinking under game pressure</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Direct Connect Box (Sidebar CTA with Shimmer & Pulse) -->
+        <div class="sidebar-connect-box no-print">
+          <div class="connect-box-inner animated-gradient-border">
+            <p class="connect-title">✨ Let's Connect!</p>
+            <p class="connect-desc">Reach out directly for academic inquiries, hackathons, and opportunities.</p>
+            <button class="btn btn-sm btn-primary btn-block btn-pulse-glow" id="sidebarContactBtn">Direct Message</button>
+          </div>
+        </div>
+
+      </aside>
+
+      <!-- ================= RIGHT MAIN AREA (Clean White ~65%) ================= -->
+      <section class="resume-main-content">
+
+        <!-- ================= SECTION 1: PROFILE ================= -->
+        <article class="main-section searchable-block" id="section-profile">
+          <div class="section-header-rounded header-shimmer">
+            <div class="header-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <h2 class="section-heading-text">PROFILE</h2>
+            <div class="header-line-accent"></div>
+            <span class="header-badge-tag animated-tag-pulse">About Me</span>
+          </div>
+
+          <div class="profile-card tilt-card">
+            <p class="profile-statement">
+              Enthusiastic and driven <strong>Computer Science & Engineering undergraduate student</strong> with a solid academic foundation in procedural and object-oriented programming (<strong>C, Python</strong>), core <strong>Data Structures</strong>, and modern <strong>Web Development</strong>. Possesses keen analytical and problem-solving skills with a commitment to writing clean, efficient code and developing user-centric software applications. Actively seeking opportunities to apply technical skills in collaborative software development environments, hackathons like SIH 2026, and innovative engineering projects.
+            </p>
+
+            <!-- Key Strengths Highlights Grid -->
+            <div class="profile-highlights-grid no-print">
+              <div class="highlight-item tilt-item">
+                <div class="highlight-icon animated-float-icon">⚡</div>
+                <div class="highlight-detail">
+                  <strong>Problem Solver</strong>
+                  <span>Logical & Analytical Thinking</span>
+                </div>
+              </div>
+              <div class="highlight-item tilt-item">
+                <div class="highlight-icon animated-float-icon">⚙️</div>
+                <div class="highlight-detail">
+                  <strong>Algorithms & C</strong>
+                  <span>Core CS Foundations & Memory</span>
+                </div>
+              </div>
+              <div class="highlight-item tilt-item">
+                <div class="highlight-icon animated-float-icon">💻</div>
+                <div class="highlight-detail">
+                  <strong>Web & Python</strong>
+                  <span>Software Applications & AI</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= SECTION 2: EDUCATION ================= -->
+        <article class="main-section searchable-block" id="section-education">
+          <div class="section-header-rounded header-shimmer">
+            <div class="header-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <h2 class="section-heading-text">EDUCATION</h2>
+            <div class="header-line-accent"></div>
+            <span class="header-badge-tag animated-tag-pulse">Academic Track</span>
+          </div>
+
+          <!-- Vertical Blue Education Timeline -->
+          <div class="education-timeline-container">
+            <div class="timeline-vertical-line"></div>
+
+            <!-- Timeline Item 1: B.Tech CSE -->
+            <div class="timeline-item timeline-featured">
+              <div class="timeline-dot-wrapper">
+                <div class="timeline-dot current-pulse"></div>
+              </div>
+              <div class="timeline-card tilt-card">
+                <div class="timeline-header">
+                  <div class="degree-info">
+                    <h3 class="degree-title">B.Tech in Computer Science & Engineering</h3>
+                    <div class="institution-name">
+                      <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M6 11v6M10 11v6M14 11v6M18 11v6M12 3l9 4H3l9-4z"/></svg>
+                      <strong>Hooghly Engineering & Technology College</strong>
+                    </div>
+                    <p class="university-sub">Under Maulana Abul Kalam Azad University of Technology (MAKAUT)</p>
+                  </div>
+                  <div class="timeline-badge-pill">
+                    <span class="timeline-year">2024 – 2028</span>
+                    <span class="status-indicator"><span class="live-dot-mini"></span> Currently Pursuing (1st Year - CSE)</span>
+                  </div>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li><span class="bullet-icon">▸</span> Core focus: Programming in C & Python, Advanced Data Structures, Discrete Mathematics, Computer Organization.</li>
+                  <li><span class="bullet-icon">▸</span> Active participant in collegiate coding contests, technical workshops, and departmental tech seminars.</li>
+                  <li><span class="bullet-icon">▸</span> Building strong theoretical and algorithmic foundations for software engineering and software systems.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2: Higher Secondary -->
+            <div class="timeline-item">
+              <div class="timeline-dot-wrapper">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-card tilt-card">
+                <div class="timeline-header">
+                  <div class="degree-info">
+                    <h3 class="degree-title">Higher Secondary Education (Class XII - Science)</h3>
+                    <div class="institution-name">
+                      <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path></svg>
+                      West Bengal Council of Higher Secondary Education (WBCHSE)
+                    </div>
+                    <p class="university-sub">WBCHSE Board • Completed 2024</p>
+                  </div>
+                  <div class="score-badge-pill">
+                    <span class="score-label">Score</span>
+                    <span class="score-value">74% Aggregate</span>
+                  </div>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li><span class="bullet-icon">▸</span> Major subjects: Physics, Chemistry, Mathematics, Computer Science & English.</li>
+                  <li><span class="bullet-icon">▸</span> Demonstrated high analytical proficiency in quantitative problem-solving and foundational computing logic.</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3: Secondary -->
+            <div class="timeline-item">
+              <div class="timeline-dot-wrapper">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="timeline-card tilt-card">
+                <div class="timeline-header">
+                  <div class="degree-info">
+                    <h3 class="degree-title">Secondary Examination (Class X)</h3>
+                    <div class="institution-name">
+                      <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l9 4.9V17L12 22 3 17V6.9L12 2z"/></svg>
+                      West Bengal Board of Secondary Education (WBBSE)
+                    </div>
+                    <p class="university-sub">WBBSE Board • Completed 2022</p>
+                  </div>
+                  <div class="score-badge-pill high-score">
+                    <span class="score-label">Score</span>
+                    <span class="score-value">86% Distinction</span>
+                  </div>
+                </div>
+
+                <ul class="timeline-bullets">
+                  <li><span class="bullet-icon">▸</span> Secured 86% overall with distinction in Mathematics and Physical Science.</li>
+                  <li><span class="bullet-icon">▸</span> Awarded top academic honors in general sciences and scholastic aptitude.</li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ================= SECTION 3: PROJECTS ================= -->
+        <article class="main-section searchable-block" id="section-projects">
+          <div class="section-header-rounded header-shimmer">
+            <div class="header-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <h2 class="section-heading-text">PROJECTS & INITIATIVES</h2>
+            <div class="header-line-accent"></div>
+            <span class="header-badge-tag animated-tag-pulse">SIH 2026</span>
+          </div>
+
+          <div class="projects-list">
+            <!-- Project: Preparing for SIH 2026 -->
+            <div class="project-showcase-card tilt-card animated-border-glow">
+              <div class="project-top-row">
+                <div class="project-title-group">
+                  <div class="project-tag-pill">Smart India Hackathon (SIH) 2026 Initiative</div>
+                  <h3 class="project-title">Preparing for SIH 2026</h3>
+                </div>
+                <div class="project-links no-print">
+                  <span class="status-indicator status-live-pill">
+                    <span class="pulse-dot"></span> Active Preparation
+                  </span>
+                </div>
+              </div>
+
+              <p class="project-summary">
+                We are preparing for SIH 2026 by exploring innovative problem statements, selecting suitable projects, and developing practical software solutions. Our focus is on teamwork, research, problem-solving, and using modern technologies such as AI, automation, and web development to build impactful solutions for real-world challenges.
+              </p>
+
+              <!-- Feature Bullet Points -->
+              <div class="project-features-list">
+                <div class="feature-item">
+                  <span class="feature-check animated-check">✓</span>
+                  <span><strong>Research & Ideation:</strong> Deep exploration of national problem statements and designing high-impact technical architectures.</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check animated-check">✓</span>
+                  <span><strong>Modern Tech Integration:</strong> Utilizing AI, automation workflows, and modern web engineering to construct practical, scalable solutions.</span>
+                </div>
+                <div class="feature-item">
+                  <span class="feature-check animated-check">✓</span>
+                  <span><strong>Collaborative Problem Solving:</strong> Fostering strong teamwork, agile development sprints, and rapid software prototyping.</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack Tags -->
+              <div class="tech-stack-row">
+                <span class="tech-tag animated-tag">AI & Automation</span>
+                <span class="tech-tag animated-tag">Web Development</span>
+                <span class="tech-tag animated-tag">Problem Solving</span>
+                <span class="tech-tag animated-tag">Python</span>
+                <span class="tech-tag animated-tag">Data Structures</span>
+                <span class="tech-tag animated-tag">Team Collaboration</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= SECTION 4: CERTIFICATIONS & WORKSHOPS ================= -->
+        <article class="main-section searchable-block" id="section-certifications">
+          <div class="section-header-rounded header-shimmer">
+            <div class="header-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <h2 class="section-heading-text">CERTIFICATIONS & WORKSHOPS</h2>
+            <div class="header-line-accent"></div>
+            <span class="header-badge-tag cert-purple-tag animated-tag-pulse">Verified Credentials</span>
+          </div>
+
+          <div class="certifications-grid">
+
+            <!-- Certification 1: Data Structure in C -->
+            <div class="cert-card tilt-card" data-cert-id="cert-dsa-c">
+              <div class="cert-card-inner">
+                <div class="cert-top-meta">
+                  <div class="cert-badge-circle animated-rotate-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                  </div>
+                  <span class="cert-date-tag">Verified Certification</span>
+                </div>
+                <div class="cert-details-col">
+                  <h3 class="cert-title">Data Structure in C</h3>
+                  <p class="cert-org-sub">Simplilearn | SkillUp • Simplilearn SkillUp Platform</p>
+                  <p class="cert-desc">
+                    Comprehensive professional certification covering theoretical fundamentals and practical implementation of core Data Structures in the C programming language.
+                  </p>
+                  <div class="cert-skills-chips">
+                    <span>Dynamic Memory</span>
+                    <span>Linked Lists</span>
+                    <span>Stacks & Queues</span>
+                    <span>BST & Trees</span>
+                    <span>Sorting Algorithms</span>
+                    <span>Big-O Analysis</span>
+                  </div>
+                </div>
+                <div class="cert-footer-row no-print">
+                  <button class="cert-view-btn animated-hover-link" onclick="openCertModal('cert-dsa-c')">
+                    <span>View Verification Details</span>
+                    <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </button>
+                  <span class="verified-pill animated-verified">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    Verified
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Certification 2: EAD 2025 - IIT Kharagpur -->
+            <div class="cert-card tilt-card" data-cert-id="cert-ead-iit-kgp">
+              <div class="cert-card-inner">
+                <div class="cert-top-meta">
+                  <div class="cert-badge-circle iit-badge animated-rotate-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <span class="cert-date-tag">2025 Edition</span>
+                </div>
+                <div class="cert-details-col">
+                  <h3 class="cert-title">EAD 2025 (Entrepreneurship Awareness Drive)</h3>
+                  <p class="cert-org-sub">Entrepreneurship Cell | IIT Kharagpur</p>
+                  <p class="cert-desc">
+                    Prestigious flagship initiative organized by the Entrepreneurship Cell of IIT Kharagpur to foster technological innovation, startup building, and venture leadership.
+                  </p>
+                  <div class="cert-skills-chips">
+                    <span>Product Ideation</span>
+                    <span>Problem-Solution Fit</span>
+                    <span>Startup Ecosystem</span>
+                    <span>Tech Venture Leadership</span>
+                    <span>Founder Networking</span>
+                  </div>
+                </div>
+                <div class="cert-footer-row no-print">
+                  <button class="cert-view-btn animated-hover-link" onclick="openCertModal('cert-ead-iit-kgp')">
+                    <span>View Verification Details</span>
+                    <svg class="icon-inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                  </button>
+                  <span class="verified-pill animated-verified">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    Verified
+                  </span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- ================= SECTION 5: ACADEMIC HIGHLIGHTS ================= -->
+        <article class="main-section searchable-block" id="section-academic-highlights">
+          <div class="section-header-rounded header-shimmer">
+            <div class="header-icon-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h2 class="section-heading-text">ACADEMIC HIGHLIGHTS</h2>
+            <div class="header-line-accent"></div>
+            <span class="header-badge-tag animated-tag-pulse">CSE Foundations</span>
+          </div>
+
+          <div class="academic-highlights-grid">
+            <div class="highlight-card-box tilt-item">
+              <div class="highlight-card-header">
+                <span class="highlight-card-icon animated-float-icon">🧩</span>
+                <span class="highlight-card-title">Data Structures & Algorithmic Logic</span>
+              </div>
+              <p class="highlight-card-text">
+                In-depth mastery of pointer arithmetic, dynamic memory allocation, complexity analysis, and linear/non-linear data representations in C.
+              </p>
+            </div>
+
+            <div class="highlight-card-box tilt-item">
+              <div class="highlight-card-header">
+                <span class="highlight-card-icon animated-float-icon">🐍</span>
+                <span class="highlight-card-title">Python & Modern Computational Tools</span>
+              </div>
+              <p class="highlight-card-text">
+                Applied object-oriented principles, modular scripting, and foundational data analysis techniques to solve practical computer engineering challenges.
+              </p>
+            </div>
+          </div>
+        </article>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="cv-footer no-print" id="footer">
+    <div class="footer-container">
+      <div class="footer-top-grid">
+        
+        <!-- Col 1: Bio & Branding -->
+        <div class="footer-col footer-col-brand">
+          <div class="footer-brand-header">
+            <span class="footer-logo-badge brand-badge-animated">SG</span>
+            <div>
+              <h3 class="footer-name">SUDIPTA GHORAI</h3>
+              <p class="footer-title">Computer Science & Engineering Student</p>
+            </div>
+          </div>
+          <p class="footer-tagline">
+            Building intuitive digital experiences and developing deep foundations in Computer Science at Hooghly Engineering & Technology College (MAKAUT).
+          </p>
+          <div class="footer-status-pill">
+            <span class="pulse-green"></span> Actively seeking technical internships & collaborative projects
+          </div>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#section-profile" class="animated-hover-link">Academic Profile</a></li>
+            <li><a href="#section-education" class="animated-hover-link">Education Timeline</a></li>
+            <li><a href="#section-skills" class="animated-hover-link">Skills & Proficiencies</a></li>
+            <li><a href="#section-projects" class="animated-hover-link">Projects & SIH 2026</a></li>
+            <li><a href="#section-certifications" class="animated-hover-link">Certifications & Honors</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Contact Details -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Direct Contact</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:gsudipta624@gmail.com" class="animated-hover-link">gsudipta624@gmail.com</a>
+            </li>
+            <li>
+              <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+917501654363" class="animated-hover-link">+91 7501654363</a>
+            </li>
+            <li>
+              <svg class="footer-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Kolkata, West Bengal, India</span>
+            </li>
+          </ul>
+
+          <div class="footer-action-btns">
+            <button class="btn btn-sm btn-primary animated-hover-btn" onclick="window.print()">
+              <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+              Print / PDF
+            </button>
+            <button class="btn btn-sm btn-outline back-to-top-btn animated-hover-btn" id="footerTopBtn" title="Back to top">
+              ↑ Top
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="copyright-text">
+          © 2024–2028 <strong>SUDIPTA GHORAI</strong> • B.Tech CSE (2024–2028) • Hooghly Engineering & Technology College
+        </div>
+        <div class="footer-bottom-badges">
+          <span class="badge-mini animated-badge">B.Tech CSE</span>
+          <span class="badge-mini animated-badge">MAKAUT</span>
+          <span class="badge-mini animated-badge">HETC</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= SPOTLIGHT COMMAND SEARCH MODAL ================= -->
+  <div class="modal-backdrop" id="spotlightModal" aria-hidden="true" role="dialog">
+    <div class="spotlight-dialog">
+      <div class="spotlight-search-header">
+        <div class="spotlight-search-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <input type="text" id="spotlightInput" placeholder="Search skills, education, certifications, contact info..." autocomplete="off">
+        <button class="spotlight-clear-btn" id="spotlightClearBtn" title="Clear">✕</button>
+        <kbd class="spotlight-esc-kbd" id="spotlightEscBtn">ESC</kbd>
+      </div>
+
+      <!-- Spotlight Results List -->
+      <div class="spotlight-results" id="spotlightResults">
+        <div class="spotlight-empty-state">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <p class="empty-title">Type to search Sudipta's portfolio</p>
+          <p class="empty-subtitle">Search for "Python", "C", "MAKAUT", "Certifications", "Email", "Skills"...</p>
+        </div>
+      </div>
+
+      <div class="spotlight-footer">
+        <span id="spotlightMatchCount">Ready to search</span>
+        <span>Click result to view • Click outside or ESC to close</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CERTIFICATION DETAIL MODAL ================= -->
+  <div class="modal-backdrop" id="certDetailModal" aria-hidden="true" role="dialog">
+    <div class="cert-modal-dialog">
+      <div class="cert-modal-header">
+        <div class="cert-header-left">
+          <div class="cert-header-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+          </div>
+          <div>
+            <h3 class="cert-modal-title" id="certModalTitle">Certification Title</h3>
+            <p class="cert-modal-issuer" id="certModalIssuer">Issuer Organization</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="certModalCloseBtn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="cert-modal-body">
+        <div class="cert-meta-grid">
+          <div class="cert-meta-box">
+            <span class="meta-box-label">Issuer / Organization</span>
+            <p class="meta-box-val" id="certModalOrg">Simplilearn | SkillUp</p>
+          </div>
+          <div class="cert-meta-box">
+            <span class="meta-box-label">Platform / Authority</span>
+            <p class="meta-box-val" id="certModalPlatform">Simplilearn SkillUp Platform</p>
+          </div>
+          <div class="cert-meta-box">
+            <span class="meta-box-label">Status</span>
+            <p class="meta-box-val text-green" id="certModalStatus">Verified & Completed</p>
+          </div>
+          <div class="cert-meta-box">
+            <span class="meta-box-label">Credential ID</span>
+            <p class="meta-box-val font-mono" id="certModalId">SL-DSA-C-847291</p>
+          </div>
+        </div>
+
+        <div class="cert-body-section">
+          <h4 class="cert-body-heading">📖 Course Description & Competency Scope</h4>
+          <p class="cert-body-desc" id="certModalDesc">Course description text here...</p>
+        </div>
+
+        <div class="cert-body-section">
+          <h4 class="cert-body-heading">🎯 Key Syllabus Modules & Verified Skills</h4>
+          <div class="cert-syllabus-grid" id="certModalSkills">
+            <!-- Dynamic skills tags -->
+          </div>
+        </div>
+      </div>
+
+      <div class="cert-modal-footer">
+        <button class="btn btn-primary" id="certModalDoneBtn">Done</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= PHOTO LIGHTBOX MODAL ================= -->
+  <div class="modal-backdrop" id="photoLightboxModal" aria-hidden="true" role="dialog">
+    <div class="lightbox-dialog">
+      <button class="lightbox-close-btn" id="lightboxCloseBtn" aria-label="Close photo">✕</button>
+      <div class="lightbox-img-wrap">
+        <img src="assets/profile.jpg" alt="Sudipta Ghorai Portrait" class="lightbox-img">
+      </div>
+      <div class="lightbox-caption">
+        <h4>Sudipta Ghorai</h4>
+        <p>Computer Science & Engineering Student • Hooghly Engineering & Technology College</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= CONTACT FORM MODAL ================= -->
+  <div class="modal-backdrop" id="contactModal" aria-hidden="true" role="dialog">
+    <div class="contact-modal-dialog">
+      <div class="contact-modal-header">
+        <div class="contact-header-left">
+          <div class="contact-header-icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <h3 class="contact-modal-title">Contact Sudipta Ghorai</h3>
+            <p class="contact-modal-sub">Get in touch for internships, projects, and collaborations</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="contactModalCloseBtn" aria-label="Close modal">✕</button>
+      </div>
+
+      <div class="contact-modal-body">
+        <div class="contact-quick-cards">
+          <div class="contact-q-card">
+            <div>
+              <span class="q-card-label">Direct Email</span>
+              <p class="q-card-val">gsudipta624@gmail.com</p>
+            </div>
+            <button class="q-copy-btn" id="modalCopyEmail" title="Copy Email">
+              <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </div>
+          <div class="contact-q-card">
+            <div>
+              <span class="q-card-label">Mobile & WhatsApp</span>
+              <p class="q-card-val">+91 7501654363</p>
+            </div>
+            <button class="q-copy-btn" id="modalCopyPhone" title="Copy Phone">
+              <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <form class="contact-composer-form" id="contactComposerForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contactName">Your Name *</label>
+              <input type="text" id="contactName" required placeholder="e.g. Alex Sharma" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="contactEmail">Your Email *</label>
+              <input type="email" id="contactEmail" required placeholder="e.g. alex@company.com" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" value="Internship Opportunity / Inquiry" class="form-control">
+          </div>
+
+          <div class="form-group">
+            <label for="contactMessage">Message *</label>
+            <textarea id="contactMessage" required rows="4" placeholder="Write your message or inquiry for Sudipta..." class="form-control"></textarea>
+          </div>
+
+          <div class="contact-form-footer">
+            <button type="button" class="btn btn-outline" id="contactModalCancelBtn">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-pulse-glow">
+              <svg class="icon-svg-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              <span>Send Message</span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back-to-Top Button -->
+  <button class="fab-scroll-top no-print" id="fabScrollTop" title="Scroll to Top" aria-label="Scroll to top">
+    ↑
+  </button>
+
+  <!-- Floating Toast Notification System -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="app.js"></script>
+</body>
+</html>
